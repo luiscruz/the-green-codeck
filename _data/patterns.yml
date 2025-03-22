@@ -1,0 +1,19 @@
+patterns:
+  - name: "Dark UI Colors"
+    category: "UI"
+    suit: "♦"
+    color: "#007BFF"
+    description: "Uses dark tones to reduce eye strain and improve focus."
+
+  - name: "Singleton"
+    category: "Creational"
+    suit: "♣"
+    color: "#28A745"
+    description: "Ensures a class has only one instance and provides a global access point."
+
+  - name: "Observer"
+    category: "Behavioral"
+    suit: "♥"
+    color: "#DC3545"
+    description: "Defines a dependency between objects so when one changes, others are notified."
+
