@@ -33,11 +33,10 @@
     border-radius: 5mm;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     padding: 10mm;
     text-align: center;
     font-family: "Arial", sans-serif;
-    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);*/
     /*border: 1mm solid;*/
     position: relative;
     page-break-inside: avoid;
@@ -47,7 +46,7 @@
     position: absolute;
     font-size: 6mm;
     font-weight: bold;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
 
 .top-left {
@@ -64,13 +63,13 @@
 .suit {
     font-size: 15mm;
     font-weight: bold;
-    margin-top: 15mm;
+    margin-top: 25mm;
 }
 
 .pattern-name {
-    font-size: 16px;
+    font-size: 28px;
     font-weight: bold;
-    margin-top: 0mm;
+    margin-top: 5mm;
 }
 
 .pattern-desc {
@@ -96,6 +95,15 @@
 .behavioral .pattern-desc{
 color: lightgray
 }
+.qr-code {
+padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.qr-code img{
+width: 30px;
+height: 30px;
+}
 
         /* PRINT STYLING */
         @media print {
@@ -106,15 +114,20 @@ color: lightgray
 </head>
 <body>
     <div class="deck">
-        {% for pattern in site.data.patterns.patterns %}
+        {% for pattern in site.data.patterns%}
         <div class="card {{pattern.category | slugify}}">
             <div class="top-left">{{ pattern.category }} {{ pattern.suit }}</div>
             <div class="suit" >{{ pattern.suit }}</div>
             <div class="pattern-name">{{ pattern.name }}</div>
-            <div class="pattern-desc">{{ pattern.description }}</div>
+            <div class="pattern-desc"><!--{{ pattern.description }}--></div>
+            <div class="qr-code">
+
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=YourTextHere&format=svg" alt="QR Code" class="qr">
+            </div>
             <div class="bottom-right">{{ pattern.category }} {{ pattern.suit }}</div>
         </div>
         {% endfor %}
     </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 </body>
 
