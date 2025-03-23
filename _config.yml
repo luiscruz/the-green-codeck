@@ -25,7 +25,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   energy-efficient software design patterns, encapsulated in a deck of cards. These
   patterns help developers build sustainable, green software by guiding them to
   write code with a lower environmental impact.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/the-green-codeck" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  luiscruz
 

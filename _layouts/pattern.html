@@ -1,9 +1,13 @@
 ---
 layout: default
 ---
+<link rel="stylesheet" href="{{ '/assets/css/deck.css' | relative_url }}">
+
 <h1>{{ page.name }}</h1>
 <p><strong>Category:</strong> {{ page.category }}</p>
 <p><strong>Suit:</strong> {{ page.suit }}</p>
 <p>{{ page.description }}</p>
 
-<!--todo: render card here-->
+{% assign pattern = page %}
+    {% include pattern_card.html %}
+{{pattern}}

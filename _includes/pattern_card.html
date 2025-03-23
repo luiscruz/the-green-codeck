@@ -1,0 +1,12 @@
+<div class="card {{ pattern.category | slugify }}">
+    <div class="top-left">{{ pattern.category }} {{ pattern.suit }}</div>
+    <div class="suit">{{ pattern.suit }}</div>
+    <div class="pattern-name">{{ pattern.name }}</div>
+    <div class="pattern-desc"><!--{{ pattern.description }}--></div>
+    <div class="qr-code">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data={{ pattern.name | url_encode }}&format=svg&bgcolor=ff00" 
+            alt="QR Code" class="qr">
+    </div>
+    <div class="bottom-right">{{ pattern.category }} {{ pattern.suit }}</div>
+</div>
+
