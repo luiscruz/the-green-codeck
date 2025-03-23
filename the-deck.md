@@ -15,7 +15,7 @@
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
-            background-color: lightgreen;
+            /*background-color: lightgreen;*/
             padding: 20px;
         }
 
@@ -103,7 +103,8 @@
     color: #ffffff;
 }
 .database.card{
-background-color: #00ffaa
+background-color: #00ffaa;
+background-color: #00d4ff;
 color: black;
 }
 
@@ -127,14 +128,14 @@ height: 30px;
 </head>
 <body>
     <div class="deck">
-        {% for pattern in site.data.patterns%}
+        {% for pattern in site.the-patterns%}
         <div class="card {{pattern.category | slugify}}">
             <div class="top-left">{{ pattern.category }} {{ pattern.suit }}</div>
             <div class="suit" >{{ pattern.suit }}</div>
             <div class="pattern-name">{{ pattern.name }}</div>
             <div class="pattern-desc"><!--{{ pattern.description }}--></div>
             <div class="qr-code">
-<img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=YourTextHere&format=svg" alt="QR Code" class="qr">
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=YourTextHere&format=svg&bgcolor=ff00" alt="QR Code" class="qr">
             </div>
             <div class="bottom-right">{{ pattern.category }} {{ pattern.suit }}</div>
         </div>
