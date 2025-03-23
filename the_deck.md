@@ -80,21 +80,30 @@
 }
 
 .ui.card{
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
+            background: #ffd93d;
+            color: black;
 }
 
 .creational.card{
-             background-color: #f8f9fa;
-            border: 1px solid rgba(255, 255, 255, 0.3);
+     background-color: #f8f9fa;
+     color: black;
 }
 .behavioral.card{
     background-color: #1a1a1a;
     color: #ffffff;
 }
-.behavioral .pattern-desc{
-color: lightgray
+
+.ai.card{
+     background-color: #ff6b6b;
+     color: black;
 }
+
+.behavioral.card{
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+
 .qr-code {
 padding-top: 10px;
     display: flex;
@@ -121,7 +130,6 @@ height: 30px;
             <div class="pattern-name">{{ pattern.name }}</div>
             <div class="pattern-desc"><!--{{ pattern.description }}--></div>
             <div class="qr-code">
-
 <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=YourTextHere&format=svg" alt="QR Code" class="qr">
             </div>
             <div class="bottom-right">{{ pattern.category }} {{ pattern.suit }}</div>

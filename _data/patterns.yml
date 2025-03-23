@@ -22,4 +22,7 @@
   category: "Behavioral"
   suit: "♥"
   description: "Defines a dependency between objects so when one changes, others are notified."
-
+- name: "Mixture of Experts"
+  category: AI
+  suit: ※
+  description: "TBD"
