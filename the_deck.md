@@ -102,6 +102,10 @@
     background-color: #1a1a1a;
     color: #ffffff;
 }
+.database.card{
+background-color: #00ffaa
+color: black;
+}
 
 
 .qr-code {
