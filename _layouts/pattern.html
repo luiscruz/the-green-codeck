@@ -3,11 +3,59 @@ layout: default
 ---
 <link rel="stylesheet" href="{{ '/assets/css/deck.css' | relative_url }}">
 
-<h1>{{ page.name }}</h1>
-<p><strong>Category:</strong> {{ page.category }}</p>
-<p><strong>Suit:</strong> {{ page.suit }}</p>
-<p>{{ page.description }}</p>
-
 {% assign pattern = page %}
     {% include pattern_card.html %}
 {{pattern}}
+
+<button id="toggleView">Show/Hide Details</button>
+<a href={{"/random" | relative_url}}> 🔀 Shuffle!</a>
+
+
+<div id="extraContent">
+    <!-- <h1>{{ page.name }}</h1></div> -->
+    <p><strong>Category:</strong> {{ page.category }}</p>
+    <p><strong>Suit:</strong> {{ page.suit }}</p>
+    <p>{{ page.description }}</p>
+</div>
+
+
+
+<script>
+    // Function to get URL parameters
+    function getUrlParameter(name) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(name);
+    }
+
+    // Function to update the URL without refreshing the page
+    function updateUrlParameter(param, value) {
+      const urlParams = new URLSearchParams(window.location.search);
+      urlParams.set(param, value);  // Set the parameter to the value
+      window.history.replaceState({}, '', `${window.location.pathname}?${urlParams}`);
+    }
+
+    // Check if the 'view' parameter is 'card' on page load
+    if (getUrlParameter('view') === 'card') {
+      document.getElementById('extraContent').classList.add('hidden');
+    }
+
+    // Toggle the view on button click and update URL
+    document.getElementById('toggleView').addEventListener('click', function() {
+      const extraContent = document.getElementById('extraContent');
+      extraContent.classList.toggle('hidden');
+
+      // Update the URL parameter accordingly
+      const isHidden = extraContent.classList.contains('hidden');
+      if (isHidden) {
+        updateUrlParameter('view', 'card');
+      } else {
+        updateUrlParameter('view', 'full');
+      }
+    });
+</script>
+
+<style>
+  .hidden {
+    display: none;
+  }
+</style>

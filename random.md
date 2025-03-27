@@ -20,14 +20,14 @@ permalink: /random/
             const randomCard = cards[Math.floor(Math.random() * cards.length)];
 
             // Redirect
-            window.location.href = randomCard;
+            window.location.href = randomCard+"?view=card";;
         });
     </script>
 </head>
 <body>
     <p>If you are not redirected, <a id="redirect-link" href="#">click here</a>.</p>
     <script>
-        document.getElementById("redirect-link").href = randomCard;
+        document.getElementById("redirect-link").href = randomCard+"?view=card";
     </script>
 </body>
 </html>

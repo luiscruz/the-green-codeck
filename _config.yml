@@ -37,7 +37,17 @@ plugins:
 collections:
   the-patterns:
     output: true
+    layout: "pattern.html"
     permalink: /the-patterns/:name/
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "the-patterns"
+    values:
+      layout: "pattern"  # Default layout for /the-patterns/:name/
+      permalink: /the-patterns/:name/
 
 # Exclude from processing.
 # The following items will not be processed, by default.
