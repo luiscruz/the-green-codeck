@@ -33,7 +33,7 @@ permalink: /shuffle/
       width: 63.5mm;
       height: 88.9mm;
 	  border-radius: 5mm;
-	  border: solid black 0.1mm;
+	  border: solid gray 0.05mm;
       opacity: 1;
       animation: shuffle 1.5s infinite;
     }
