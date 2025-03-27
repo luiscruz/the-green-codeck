@@ -1,5 +1,4 @@
 ---
-layout: pattern
 title: "Singleton"
 name: "Singleton"
 category: "Creational"

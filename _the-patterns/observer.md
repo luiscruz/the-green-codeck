@@ -1,5 +1,4 @@
 ---
-layout: pattern
 title: "Observer"
 name: "Observer"
 category: "Behavioral"

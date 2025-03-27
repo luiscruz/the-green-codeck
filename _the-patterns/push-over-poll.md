@@ -1,5 +1,4 @@
 ---
-layout: pattern
 title: "Push Over Poll"
 name: "Push Over Poll"
 category: "UI"

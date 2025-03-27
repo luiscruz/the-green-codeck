@@ -1,5 +1,4 @@
 ---
-layout: pattern
 title: "Avoid Extraneous Graphics"
 name: "Avoid Extraneous Graphics"
 category: "UI"

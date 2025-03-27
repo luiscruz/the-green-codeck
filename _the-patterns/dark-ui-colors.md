@@ -1,5 +1,4 @@
 ---
-layout: pattern
 title: "Dark UI Colors"
 name: "Dark UI Colors"
 category: "UI"
