@@ -1,0 +1,10 @@
+- name: AI
+  suit: ※
+- name: Database
+  suit: ⌗
+- name: UI
+  suit: ♦
+- name: Behavioral
+  suit: ♥
+- name: Creational
+  suit: ♣
