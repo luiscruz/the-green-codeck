@@ -15,6 +15,7 @@ permalink: /shuffle/
 	    font: 400 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	    color: #111;
 	    background-color: #fdfdfd;
+        background-color: #f2f2f2;
 	    -webkit-text-size-adjust: 100%;
 	    -webkit-font-feature-settings: "kern" 1;
 	    -moz-font-feature-settings: "kern" 1;
