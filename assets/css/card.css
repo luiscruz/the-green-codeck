@@ -1,0 +1,99 @@
+
+.card {
+    width: 63.5mm;
+    height: 88.9mm;
+    background-color: white;
+    border-radius: 5mm;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-between;*/
+    padding: 10mm;
+    text-align: center;
+    font-family: "Arial", sans-serif;
+    /*border: 1mm solid;*/
+    position: relative;
+    page-break-inside: avoid;
+    break-inside: avoid;
+}
+
+#card-container{
+    width: 50%; /* or any fixed width */
+  margin: 0 auto;
+}
+
+.top-left, .bottom-right {
+    position: absolute;
+    font-size: 6mm;
+    font-weight: bold;
+    /*text-transform: uppercase;*/
+}
+
+.top-left {
+    top: 4mm;
+    left: 6mm;
+}
+
+.bottom-right {
+    bottom: 4mm;
+    right: 6mm;
+    transform: rotate(180deg);
+}
+
+.suit {
+    font-size: 15mm;
+    font-weight: bold;
+    margin-top: 25mm;
+}
+
+.pattern-name {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 5mm;
+}
+
+.pattern-desc {
+    font-size: 12px;
+    /*color: #333;*/
+    margin-bottom: 8mm;
+    padding: 0 5mm;
+}
+
+.ui.card{
+            background: #ffd93d;
+            color: black;
+}
+
+.creational.card{
+     background-color: #f8f9fa;
+     color: black;
+}
+.behavioral.card{
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.ai.card{
+     background-color: #ff6b6b;
+     color: black;
+}
+
+.behavioral.card{
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+.database.card{
+background-color: #00ffaa;
+background-color: #00d4ff;
+color: black;
+}
+
+
+.qr-code {
+padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.qr-code img{
+width: 30px;
+height: 30px;
+}

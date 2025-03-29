@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Software Design Patterns Deck</title>
 	<link rel="stylesheet" href="{{ '/assets/css/deck.css' | relative_url }}">
+	<link rel="stylesheet" href="{{ '/assets/css/card.css' | relative_url }}">
 </head>
 <body>
     <div class="deck">
