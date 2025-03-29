@@ -1,24 +1,23 @@
 ---
 layout: page
 ---
-	<link rel="stylesheet" href="{{ '/assets/css/card.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/card.css' | relative_url }}">
 
-{% assign pattern = page %}
+<div class="overlay" id="overlay"></div>
+
 <div id="card-container">
-{% include pattern_card.html %}
-
-<button id="toggleView">Show/Hide Details</button>
-<a href={{"/shuffle" | relative_url}}> 🔀 Shuffle!</a>
-<a href={{"/the-patterns" | relative_url}}> 🗂️ See all patterns!</a>
+  {% assign pattern = page %}
+  {% include pattern_card.html %}
+  <button id="toggleView">Show/Hide Details</button>
+  <a href={{"/shuffle" | relative_url}}> 🔀 Shuffle!</a>
+  <a href={{"/the-patterns" | relative_url}}> 🗂️ See all patterns!</a>
 </div>
 
 
-<div id="extraContent">
     <!-- <h1>{{ page.name }}</h1></div> -->
     <p><strong>Category:</strong> {{ page.category }}</p>
     <p><strong>Suit:</strong> {{ page.suit }}</p>
     <p>{{ page.description }}</p>
-</div>
 
 
 
@@ -38,16 +37,16 @@ layout: page
 
     // Check if the 'view' parameter is 'card' on page load
     if (getUrlParameter('view') === 'card') {
-      document.getElementById('extraContent').classList.add('hidden');
+      document.getElementById('overlay').classList.add('active');
     }
 
     // Toggle the view on button click and update URL
     document.getElementById('toggleView').addEventListener('click', function() {
-      const extraContent = document.getElementById('extraContent');
-      extraContent.classList.toggle('hidden');
+      const extraContent = document.getElementById('overlay');
+      extraContent.classList.toggle('active');
 
       // Update the URL parameter accordingly
-      const isHidden = extraContent.classList.contains('hidden');
+      const isHidden = extraContent.classList.contains('active');
       if (isHidden) {
         updateUrlParameter('view', 'card');
       } else {
@@ -56,8 +55,3 @@ layout: page
     });
 </script>
 
-<style>
-  .hidden {
-    display: none;
-  }
-</style>
