@@ -1,12 +1,12 @@
 {{assign suit: category.suit for category in site.data.categories where category.name == pattern.category | first}}
 {% assign category = site.data.categories | where: "name", pattern.category | first %}
-<div class="card {{ pattern.category | slugify }}">
+<div class="card {{ pattern.category | slugify }}" style="background-color:#{{category.background}};">
     <div class="top-left">{{ pattern.category }} {{ category.suit }}</div>
     <div class="suit">{{ category.suit }}</div>
     <div class="pattern-name">{{ pattern.name }}</div>
     <div class="pattern-desc"><!--{{ pattern.description }}--></div>
     <div class="qr-code">
-        <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data={{ pattern.name | url_encode }}&format=svg&bgcolor=ff00" 
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data={{ pattern.url | absolute_url | url_encode }}&format=svg&bgcolor={{category.background}}"
             alt="QR Code" class="qr">
     </div>
     <div class="bottom-right">{{ pattern.category }} {{ category.suit }}</div>

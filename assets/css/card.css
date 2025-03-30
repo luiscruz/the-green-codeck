@@ -122,32 +122,22 @@ a.btn {
 }
 
 .ui.card{
-            background: #ffd93d;
-            color: black;
 }
 
 .creational.card{
-     background-color: #f8f9fa;
-     color: black;
 }
 .behavioral.card{
-    background-color: #1a1a1a;
     color: #ffffff;
 }
 
 .ai.card{
-     background-color: #ff6b6b;
-     color: black;
 }
 
 .behavioral.card{
-    background-color: #1a1a1a;
     color: #ffffff;
 }
 .database.card{
-background-color: #00ffaa;
-background-color: #00d4ff;
-color: black;
+/*background-color: #00ffaa;*/
 }
 
 
@@ -157,6 +147,6 @@ padding-top: 10px;
     justify-content: center;
 }
 .qr-code img{
-width: 30px;
-height: 30px;
+width: 45px;
+height: 45px;
 }
