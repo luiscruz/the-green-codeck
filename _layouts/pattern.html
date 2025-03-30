@@ -8,18 +8,17 @@ layout: page
 <div id="card-container">
   {% assign pattern = page %}
   {% include pattern_card.html %}
-  <button id="toggleView">Show/Hide Details</button>
-  <a href={{"/shuffle" | relative_url}}> 🔀 Shuffle!</a>
-  <a href={{"/the-patterns" | relative_url}}> 🗂️ See all patterns!</a>
+  <div class="link-container">
+    <button id="toggleView" class="btn">Hide Details</button>
+    <a href={{"/shuffle" | relative_url}} class="btn"> 🔀 Shuffle!</a>
+    <a href={{"/the-patterns" | relative_url}} class="btn"> 🗂️ See all patterns!</a>
+  </div>
 </div>
-
 
     <!-- <h1>{{ page.name }}</h1></div> -->
     <p><strong>Category:</strong> {{ page.category }}</p>
-    <p><strong>Suit:</strong> {{ page.suit }}</p>
+    <!--<p><strong>Suit:</strong> {{ page.suit }}</p>-->
     <p>{{ page.description }}</p>
-
-
 
 <script>
     // Function to get URL parameters
@@ -38,6 +37,7 @@ layout: page
     // Check if the 'view' parameter is 'card' on page load
     if (getUrlParameter('view') === 'card') {
       document.getElementById('overlay').classList.add('active');
+        this.textContent = "Show Details";
     }
 
     // Toggle the view on button click and update URL
@@ -49,8 +49,10 @@ layout: page
       const isHidden = extraContent.classList.contains('active');
       if (isHidden) {
         updateUrlParameter('view', 'card');
+        this.textContent = "Show Details";
       } else {
         updateUrlParameter('view', 'full');
+        this.textContent = "Hide Details";
       }
     });
 </script>
