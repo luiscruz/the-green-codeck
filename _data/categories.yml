@@ -10,6 +10,9 @@
 - name: Behavioral
   suit: ♥
   background: "1a1a1a"
-- name: Cloud
+- name: General
   suit: ♣
   background: "f8f9fa"
+- name: Cloud
+  suit: ☁︎
+  background: e6e6fa

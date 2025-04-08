@@ -105,14 +105,17 @@ a.btn {
 .suit {
     font-size: 15mm;
     font-weight: bold;
-    margin-top: 25mm;
+    margin-top: 10mm;
 }
 
 .pattern-name {
     font-size: 28px;
     font-weight: bold;
     margin-top: 5mm;
-}
+    height: 20mm;
+display: grid;
+  place-items: center;
+  text-align: center;}
 
 .pattern-desc {
     font-size: 12px;
