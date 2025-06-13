@@ -7,9 +7,6 @@
 - name: UI
   suit: ♦
   background: "ffd93d"
-- name: Behavioral
-  suit: ♥
-  background: "1a1a1a"
 - name: General
   suit: ♣
   background: "f8f9fa"
@@ -19,3 +16,6 @@
 - name: DevOps
   suit: ∞
   background: 2ec4b6
+- name: Behavioral
+  suit: ♥
+  background: "1a1a1a"
