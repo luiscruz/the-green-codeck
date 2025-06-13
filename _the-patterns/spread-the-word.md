@@ -1,5 +1,5 @@
 ---
-name: "Green Procurement"
+name: "Spread the Word"
 category: "Organization"
 description: "Select providers that are certified or demonstrate a genuine commitment to sustainable software practices.  
 This pattern can be applied across all stages of the software development lifecycle.
