@@ -75,7 +75,7 @@ a.btn {
     background-color: #f2f2f2;
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.5s ease, visibility 0.5s ease;
+    transition: none;
 }
 
 /* Ensure the overlay is behind the card */
