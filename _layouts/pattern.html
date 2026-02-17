@@ -48,7 +48,7 @@ layout: default
     // Check if the 'view' parameter is 'card' on page load
     if (getUrlParameter('view') === 'card') {
       document.getElementById('overlay').classList.add('active');
-        this.textContent = "Show Details";
+      document.getElementById('toggleView').textContent = "Show Details";
     }
 
     // Toggle the view on button click and update URL
