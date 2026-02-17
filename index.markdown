@@ -17,7 +17,7 @@ Whether you are building a small application or working on a large-scale system,
 ## What's in the Box?
 When you order The Green Codeck, you’ll receive a physical deck filled with actionable, energy-efficient design patterns, including:
 
-- **50+ Energy-Efficient Design Patterns** – Each card contains a specific strategy, best practice, or tip.
+- **Energy-Efficient Design Patterns** – Each card contains a specific strategy, best practice, or tip.
 - **Categories for Easy Reference** – The cards are organized into various categories, such as optimization, algorithms, and infrastructure, making it easy to find the right pattern.
 - **Simple and Actionable Tips** – Quick to understand and ready to apply to your project, whether you're optimizing an existing system or building something new.
 - **Sustainable Code Challenge** – A unique card that challenges you to optimize a piece of code for energy efficiency, making learning interactive and fun!
