@@ -41,6 +41,13 @@ layout: default
       {% endfor %}
     </ul>
     {% endif %}
+
+    <h3>Share this pattern</h3>
+    <div class="link-container">
+      <a class="btn" href="https://www.linkedin.com/sharing/share-offsite/?url={{ page.url | absolute_url | url_encode }}" target="_blank">LinkedIn</a>
+      <a class="btn" href="https://bsky.app/intent/compose?text={{ page.name | url_encode }}%20%E2%80%93%20an%20energy-efficient%20software%20pattern%20from%20The%20Green%20Codeck%20{{ page.url | absolute_url | url_encode }}" target="_blank">Bluesky</a>
+      <button class="btn" id="copyLink">Copy link</button>
+    </div>
 </div>
 
 
@@ -80,6 +87,14 @@ layout: default
         updateUrlParameter('view', 'full');
         this.innerHTML = "<span>&#9650;</span> Hide details";
       }
+    });
+
+    document.getElementById('copyLink').addEventListener('click', function() {
+      navigator.clipboard.writeText(window.location.href.split('?')[0]);
+      this.textContent = 'Copied!';
+      setTimeout(function() {
+        document.getElementById('copyLink').textContent = 'Copy link';
+      }, 2000);
     });
 </script>
 
