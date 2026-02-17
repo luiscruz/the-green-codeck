@@ -26,7 +26,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   patterns help developers build sustainable, green software by guiding them to
   write code with a lower environmental impact.
 baseurl: "/the-green-codeck" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://luiscruz.github.io"
 github_username:  luiscruz
 
 # Build settings
