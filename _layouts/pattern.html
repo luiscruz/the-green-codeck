@@ -16,9 +16,9 @@ layout: default
   {% assign pattern = page %}
   {% include pattern_card.html %}
   <div class="link-container">
-    <button id="toggleView" class="btn">Hide Details</button>
-    <a href={{"/shuffle" | relative_url}} class="btn">🃏 Shuffle!</a>
-    <a href={{"/the-patterns" | relative_url}} class="btn"> 🗂️ See all patterns!</a>
+    <button id="toggleView" class="btn"><span>&#9650;</span> Hide details</button>
+    <a href={{"/shuffle" | relative_url}} class="btn"><span>&#8635;</span> Shuffle</a>
+    <a href={{"/the-patterns" | relative_url}} class="btn"><span>&#9776;</span> All patterns</a>
   </div>
 </div>
 
@@ -48,7 +48,7 @@ layout: default
     // Check if the 'view' parameter is 'card' on page load
     if (getUrlParameter('view') === 'card') {
       document.getElementById('overlay').classList.add('active');
-      document.getElementById('toggleView').textContent = "Show Details";
+      document.getElementById('toggleView').innerHTML = "<span>&#9660;</span> Show details";
     }
 
     // Toggle the view on button click and update URL
@@ -60,10 +60,10 @@ layout: default
       const isHidden = extraContent.classList.contains('active');
       if (isHidden) {
         updateUrlParameter('view', 'card');
-        this.textContent = "Show Details";
+        this.innerHTML = "<span>&#9660;</span> Show details";
       } else {
         updateUrlParameter('view', 'full');
-        this.textContent = "Hide Details";
+        this.innerHTML = "<span>&#9650;</span> Hide details";
       }
     });
 </script>
