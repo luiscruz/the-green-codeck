@@ -23,10 +23,10 @@ border: none;
 }
 
 #card-container{
-    width: 50%; /* or any fixed width */
+  width: fit-content;
   margin: 0 auto;
   position: relative;
-      z-index: 10; /* Ensure it's above the overlay */
+  z-index: 10;
 }
 
 .link-container {
