@@ -15,6 +15,9 @@
     position: relative;
     page-break-inside: avoid;
     break-inside: avoid;
+}
+
+#card-container .card {
     margin: 0 auto;
 }
 @media print {
