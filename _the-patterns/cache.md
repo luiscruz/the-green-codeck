@@ -10,4 +10,7 @@ description: |
   Implement caching mechanisms to temporarily store data and avoid redundant processing or communication. 
   Where applicable, validate whether data has changed before triggering updates or downloads.
   This pattern is especially effective in read-heavy systems or when dealing with remote resources.
+sources:
+  - 'Cruz, L. and Abreu, R. Energy Patterns for Mobile Apps. <https://tqrg.github.io/energy-patterns>'
+  - 'Gottschalk, M., Jelschen, J. and Winter, A. "Saving Energy on Mobile Devices by Refactoring." <http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.567.383>'
 ---

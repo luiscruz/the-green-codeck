@@ -9,5 +9,5 @@ description: >
   This flexibility helps reduce unnecessary energy use without compromising usability for those who prioritize full functionality.
 
 sources:
-  - Cruz, L. et al. "Energy Patterns." <https://tqrg.github.io/energy-patterns/>
+  - 'Cruz, L. and Abreu, R. Energy Patterns for Mobile Apps. <https://tqrg.github.io/energy-patterns>'
 ---

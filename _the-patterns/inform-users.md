@@ -7,4 +7,6 @@ description:  |
   Depending on context and individual preferences, users may prioritize features differently. 
   Providing clear and timely information empowers them to make informed choices that balance usability and sustainability.
   Use visual cues like badges, alerts, or contextual hints to surface this information within the interface.
+sources:
+  - 'Cruz, L. and Abreu, R. Energy Patterns for Mobile Apps. <https://tqrg.github.io/energy-patterns>'
 ---
