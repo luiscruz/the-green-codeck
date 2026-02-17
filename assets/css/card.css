@@ -15,6 +15,7 @@
     position: relative;
     page-break-inside: avoid;
     break-inside: avoid;
+    margin: 0 auto;
 }
 @media print {
   .card{
@@ -24,6 +25,7 @@ border: none;
 
 #card-container{
   width: fit-content;
+  min-width: 450px;
   margin: 0 auto;
   position: relative;
   z-index: 10;
@@ -42,7 +44,7 @@ border: none;
   align-items: center;
   justify-content: center;
   gap: 0.3em;
-  flex: 1 0 auto;
+  flex: 1 0 0;
   padding: 0.5em 1.2em;
   background: none;
   color: #333;
