@@ -43,6 +43,15 @@ Want to bring The Green Codeck to your team or classroom? Pre-order a physical d
 </a>
 
 
-# Games
+## Games
 
-There are multiple
+The Green Codeck is not just a reference but also a tool for team learning. Here are a few games you can play with the deck.
+
+### Green Code Review
+Show a real or fictional code snippet to the group. Each player draws 3 cards and has 2 minutes to pitch how one or more of their cards can improve the code's energy efficiency. The group votes on the most impactful suggestion. Winner keeps the snippet as a point. Works well in workshops and classrooms as it forces players to connect patterns to concrete code.
+
+### Pattern Poker
+Like planning poker, but for sustainability. Describe a software scenario (e.g., "a mobile app that syncs user data every 30 seconds"). Each player secretly picks the pattern card from their hand they believe would have the biggest energy impact. Everyone reveals at the same time, defends their choice, and the group reaches consensus.
+
+### Sustainability Quiz
+One player reads a pattern's description without revealing the name. Other players race to guess the pattern. First correct answer scores a point. Bonus point if the player can name a real-world example where the pattern applies.
