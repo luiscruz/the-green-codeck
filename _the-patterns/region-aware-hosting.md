@@ -7,5 +7,5 @@ From an energy-efficiency perspective, shorter network distances mean fewer ener
 
 This pattern can be applied when selecting data center regions for cloud services, content delivery networks (CDNs), and edge computing setups."
 sources:
-    - Greenwood, Tom. Sustainable web design. New York: A Book Apart, 2021.
+    - "Greenwood, Tom. Sustainable web design. New York: A Book Apart, 2021."
 ---

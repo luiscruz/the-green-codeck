@@ -26,6 +26,21 @@ layout: default
     <p><strong>Category:</strong> {{ page.category }}</p>
     <!--<p><strong>Suit:</strong> {{ page.suit }}</p>-->
     <p>{{ page.description }}</p>
+
+    {% if page.sources %}
+    <h3>Sources</h3>
+    <ul>
+      {% for source in page.sources %}
+      {% assign parts = source | split: '<' %}
+      {% if parts.size > 1 %}
+        {% assign url = parts[1] | split: '>' | first %}
+        <li>{{ parts[0] }} <a href="{{ url }}">&#8599;</a></li>
+      {% else %}
+        <li>{{ source }}</li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+    {% endif %}
 </div>
 
 
