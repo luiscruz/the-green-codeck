@@ -19,4 +19,4 @@ Here is a catalog of **{{ site.the-patterns | size }} energy patterns** that you
 
 {% endfor %}
 
-
+Know a pattern that's missing? [Contribute on GitHub](https://github.com/{{ site.github_username }}/the-green-codeck).

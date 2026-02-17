@@ -55,3 +55,7 @@ Like planning poker, but for sustainability. Describe a software scenario (e.g.,
 
 ### Sustainability Quiz
 One player reads a pattern's description without revealing the name. Other players race to guess the pattern. First correct answer scores a point. Bonus point if the player can name a real-world example where the pattern applies.
+
+## Contribute
+
+Know a pattern that's missing? The Green Codeck is open source and welcomes contributions. [Check out the project on GitHub](https://github.com/{{ site.github_username }}/the-green-codeck).
