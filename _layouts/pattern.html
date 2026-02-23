@@ -42,9 +42,10 @@ layout: default
     {% endif %}
 
     <h3>Share this pattern</h3>
+    {% capture share_text %}{{ page.name }} – an energy-efficient software pattern from The Green Codeck {{ page.url | absolute_url }}{% endcapture %}
     <div class="link-container">
-      <a class="btn" href="https://www.linkedin.com/feed/?shareActive=true&text={{ page.name | url_encode }}%20%E2%80%93%20an%20energy-efficient%20software%20pattern%20from%20The%20Green%20Codeck%0A{{ page.url | absolute_url | url_encode }}" target="_blank">LinkedIn</a>
-      <a class="btn" href="https://bsky.app/intent/compose?text={{ page.name | url_encode }}%20%E2%80%93%20an%20energy-efficient%20software%20pattern%20from%20The%20Green%20Codeck%20{{ page.url | absolute_url | url_encode }}" target="_blank">Bluesky</a>
+      <a class="btn" href="https://www.linkedin.com/feed/?shareActive=true&text={{ share_text | url_encode | replace: '+', '%20' }}" target="_blank">LinkedIn</a>
+      <a class="btn" href="https://bsky.app/intent/compose?text={{ share_text | url_encode | replace: '+', '%20' }}" target="_blank">Bluesky</a>
       <button class="btn" id="copyLink">Copy link</button>
     </div>
 </div>
