@@ -13,7 +13,7 @@ layout: default
   {% include pattern_card.html %}
   <div class="link-container">
     <button id="toggleView" class="btn"><span>&#9650;</span> Hide details</button>
-    <a href={{"/shuffle" | relative_url}} class="btn"><span>&#8635;</span> Shuffle</a>
+    <a href="{{ '/shuffle' | relative_url }}?exclude={{ page.url | relative_url | url_encode }}" class="btn"><span>&#8635;</span> Shuffle</a>
     <a href={{"/the-patterns" | relative_url}} class="btn"><span>&#9776;</span> All patterns</a>
   </div>
 </div>

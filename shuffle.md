@@ -108,10 +108,14 @@ permalink: /shuffle/
   <script>
     // Function to get a random card URL and redirect after animation
     function getRandomCard() {
-      // List of your card URLs
-            const cardUrls = [
-                {% for card in site.the-patterns %} "{{ card.url | relative_url}}", {% endfor %}
-            ];
+      const exclude = new URLSearchParams(window.location.search).get('exclude');
+      let cardUrls = [
+        {% for card in site.the-patterns %}"{{ card.url | relative_url}}", {% endfor %}
+      ];
+
+      if (exclude && cardUrls.length > 1) {
+        cardUrls = cardUrls.filter(url => url !== exclude);
+      }
 
       // Get a random card URL
       const randomCard = cardUrls[Math.floor(Math.random() * cardUrls.length)];
