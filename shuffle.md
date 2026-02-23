@@ -118,7 +118,7 @@ permalink: /shuffle/
 
       // Redirect to the random card after the animation (2.5s)
       setTimeout(() => {
-        window.location.href = randomCard+"?view=card";
+        window.location.replace(randomCard+"?view=card");
       }, 500);  // Match the timing of the animation
     }
 
