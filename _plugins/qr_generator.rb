@@ -16,7 +16,7 @@ Jekyll::Hooks.register :site, :post_write do |site|
     bgcolor = bgcolor_for[doc.data['category']] || 'ffffff'
     url     = "#{base_url}/the-patterns/#{slug}/"
 
-    qr  = RQRCode::QRCode.new(url)
+    qr  = RQRCode::QRCode.new(url, level: :l)
     svg = qr.as_svg(color: '000000', fill: bgcolor, module_size: 4, standalone: true)
 
     File.write(File.join(output_dir, "#{slug}.svg"), svg)
