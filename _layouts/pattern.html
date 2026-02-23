@@ -70,13 +70,11 @@ layout: default
       document.getElementById('overlay').classList.add('active');
       document.getElementById('toggleView').innerHTML = "<span>&#9660;</span> Show details";
       window.scrollTo(0, 0);
-      document.body.style.overflow = 'hidden';
     }
 
     function exitCardView() {
       document.getElementById('overlay').classList.remove('active');
       document.getElementById('toggleView').innerHTML = "<span>&#9650;</span> Hide details";
-      document.body.style.overflow = '';
     }
 
     // Check if the 'view' parameter is 'card' on page load
