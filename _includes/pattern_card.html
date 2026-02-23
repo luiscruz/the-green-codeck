@@ -6,8 +6,9 @@
     <div class="pattern-name">{{ pattern.name }}</div>
     <div class="pattern-desc"><!--{{ pattern.description }}--></div>
     <div class="qr-code">
-      <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data={{ pattern.url | absolute_url | url_encode }}&format=svg&bgcolor={{category.background}}"
-            alt="QR Code" class="qr">
+      {% assign qr_slug = pattern.path | split: '/' | last | remove: '.md' %}
+      <img src="{{ '/assets/qr/' | append: qr_slug | append: '.svg' | relative_url }}"
+           alt="QR Code" class="qr">
     </div>
     <div class="bottom-right">{{ pattern.category }} {{ category.suit }}</div>
 </div>
