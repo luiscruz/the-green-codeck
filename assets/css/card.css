@@ -29,7 +29,7 @@ border: none;
 
 #card-container{
   width: fit-content;
-  min-width: 450px;
+  min-width: min(450px, 100%);
   margin: 0 auto;
   position: relative;
   z-index: 10;
