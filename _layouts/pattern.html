@@ -66,25 +66,33 @@ layout: default
       window.history.replaceState({}, '', `${window.location.pathname}?${urlParams}`);
     }
 
-    // Check if the 'view' parameter is 'card' on page load
-    if (getUrlParameter('view') === 'card') {
+    function enterCardView() {
       document.getElementById('overlay').classList.add('active');
       document.getElementById('toggleView').innerHTML = "<span>&#9660;</span> Show details";
+      window.scrollTo(0, 0);
+      document.body.style.overflow = 'hidden';
+    }
+
+    function exitCardView() {
+      document.getElementById('overlay').classList.remove('active');
+      document.getElementById('toggleView').innerHTML = "<span>&#9650;</span> Hide details";
+      document.body.style.overflow = '';
+    }
+
+    // Check if the 'view' parameter is 'card' on page load
+    if (getUrlParameter('view') === 'card') {
+      enterCardView();
     }
 
     // Toggle the view on button click and update URL
     document.getElementById('toggleView').addEventListener('click', function() {
-      const extraContent = document.getElementById('overlay');
-      extraContent.classList.toggle('active');
-
-      // Update the URL parameter accordingly
-      const isHidden = extraContent.classList.contains('active');
-      if (isHidden) {
-        updateUrlParameter('view', 'card');
-        this.innerHTML = "<span>&#9660;</span> Show details";
-      } else {
+      const isCardView = document.getElementById('overlay').classList.contains('active');
+      if (isCardView) {
+        exitCardView();
         updateUrlParameter('view', 'full');
-        this.innerHTML = "<span>&#9650;</span> Hide details";
+      } else {
+        enterCardView();
+        updateUrlParameter('view', 'card');
       }
     });
 
